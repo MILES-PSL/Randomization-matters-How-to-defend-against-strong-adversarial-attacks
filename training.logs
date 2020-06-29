@@ -1,0 +1,56 @@
+Creation of the Mixture class
+   Loading models...
+   Starting BAT algorithm...
+      Adding Boosted Classifier n°0...
+      Training Boosted Classifier n°0...
+         Epoch : 0
+         Loss: 2.399 | Acc: 5.469% (7/128)
+         Acc: 0.000% (0.000/100)
+Traceback (most recent call last):
+  File "train.py", line 94, in <module>
+    MC.boosting(level =  level + 1)
+  File "/gpfs7kw/linkhome/rech/genlam01/uvj81ht/ICML_final_version/mixture.py", line 190, in boosting
+    self.trainBoostedClassifier(classifier = classifier, level = level +1)
+  File "/gpfs7kw/linkhome/rech/genlam01/uvj81ht/ICML_final_version/mixture.py", line 261, in trainBoostedClassifier
+    accuracy_under_attack, _ = models.test_under_attack(classifier, self.device, self.test_loader, attack, level = level +1)
+TypeError: cannot unpack non-iterable float object
+Creation of the Mixture class
+   Loading models...
+   Starting BAT algorithm...
+      Adding Boosted Classifier n°0...
+      Training Boosted Classifier n°0...
+         Epoch : 0
+         Loss: 2.354 | Acc: 10.156% (13/128)
+         Acc: 2.000% (2.000/100)
+Traceback (most recent call last):
+  File "train.py", line 94, in <module>
+    MC.boosting(level =  level + 1)
+  File "/gpfs7kw/linkhome/rech/genlam01/uvj81ht/ICML_final_version/mixture.py", line 190, in boosting
+    self.trainBoostedClassifier(classifier = classifier, level = level +1)
+  File "/gpfs7kw/linkhome/rech/genlam01/uvj81ht/ICML_final_version/mixture.py", line 261, in trainBoostedClassifier
+    accuracy_under_attack, _ = models.test_under_attack(classifier, self.device, self.test_loader, attack, level = level +1)
+TypeError: cannot unpack non-iterable float object
+Creation of the Mixture class
+   Loading models...
+   Starting BAT algorithm...
+      Adding Boosted Classifier n°0...
+      Training Boosted Classifier n°0...
+         Epoch : 0
+         Loss: 2.396 | Acc: 8.594% (11/128)
+         Acc: 3.000% (3.000/100)
+         Acc: 12.000% (12/100)
+         Saving..
+         Saving..
+         Saving..
+      Adding Boosted Classifier n°1...
+      Training Boosted Classifier n°1...
+         Creating the adversarial data loader (according to the current mixture)...
+         Epoch : 0
+         Loss: 2.322 | Acc: 10.156% (13/128)
+         Acc: 11.000% (11/100)
+         Acc: 11.000% (11/100)
+         Saving..
+         Saving..
+         Saving..
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data/cifar10/cifar-10-python.tar.gz
+0it [00:00, ?it/s]slurmstepd: error: *** STEP 2122450.0 ON r6i6n7 CANCELLED AT 2020-06-28T23:29:50 ***

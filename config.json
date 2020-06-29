@@ -1,0 +1,48 @@
+{
+  "_comment": "===== General configuration =====",
+  "dataset": "cifar10",
+  "number_of_class": 10,
+  "dataroot": "./data",
+  "save_dir": "./Save",
+  "number_of_models": 2,
+  "load": true,
+  "method": "boosting",
+
+  "_comment": "===== Training/Testing configuration =====",
+  "epochs": 200,
+  "batch_size": 128,
+  "test_batch_size":100,
+
+  "_comment": "===== Mixture weight update =====",
+  "alpha" : 0.2,
+
+  "_comment": "===== Optimizer configuration =====",
+  "lr" : 0.1,
+  "weight_decay": 2e-4,
+  "momentum": 0.9,
+
+  "_comment": "===== Learning rate scheduler =====",
+  "milestones": [60, 120, 160],
+  "gamma": 0.2,
+
+  "_comment": "===== General attack configuration =====",
+  "clip_min": 0.0, 
+  "clip_max": 1.0,
+
+  "_comment": "===== PGDLINF attack =====",
+  "eps": 8.0,
+  "nb_iter": 20,
+  "eps_iter": 2.0,
+  "rand_init": true,
+
+  "_comment": "===== Carlini and Wagner attack =====",
+  "learning_rate" : 0.01, 
+  "binary_search_steps": 9,
+  "max_iterations": 100, 
+  "abort_early": true,
+  "initial_const": 0.001,
+
+  "_comment": "===== Mixture Eval =====",
+  "expectation_iterations" : 100 
+
+}
